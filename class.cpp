@@ -47,34 +47,60 @@
 // }
 
 
-//Program 3 - Add two numbers
+// //Program 3 - Add two numbers
+// #include <iostream>
+// using namespace std;
+
+// class Maths{
+//     public:
+//     int a;
+//     int b;
+
+//     void add(){
+//         cout << "Enter 1st Number = " ;
+//         cin >> a;
+//         cout << "Enter 2nd Number = " ;
+//         cin >> b;
+        
+//         cout << "Sum = " << a+b << endl ;
+//     }
+//     void multiply(){
+//         cout << "Product = " << a*b;
+//     }
+// };
+// int main(){
+//     Maths m;
+//     m.a ;
+//     m.b ;
+
+//     m.add();
+//     m.multiply();
+
+//     return 0 ;
+// }
+
+//Program 4 - Area of rectangle
 #include <iostream>
 using namespace std;
 
-class Maths{
+class Area{
     public:
-    int a;
-    int b;
+    int l ;
+    int b ;
 
-    void add(){
-        cout << "Enter 1st Number = " ;
-        cin >> a;
-        cout << "Enter 2nd Number = " ;
-        cin >> b;
-        
-        cout << "Sum = " << a+b << endl ;
-    }
-    void multiply(){
-        cout << "Product = " << a*b;
+    void display(){
+        cout << "Enter the length = " ;
+        cin >> l ;
+        cout <<"Enter the breadth = "  ;
+        cin >> b ;
+        cout << "Area of rectangle = " <<l*b ;
     }
 };
 int main(){
-    Maths m;
-    m.a ;
-    m.b ;
-
-    m.add();
-    m.multiply();
+    Area r;
+    r.l ;
+    r.b ;
+    r.display();
 
     return 0 ;
 }
