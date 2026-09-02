@@ -3,11 +3,11 @@ using namespace std;
 
 class BankAccount{
     private:
-    int balance;
+        int balance;
 
     public:
-    int addBalance;
-    int withdrawBalance;
+        int addBalance;
+        int withdrawBalance;
 
     void getbalance(){
         cout<<"Enter the amount: ";
@@ -22,25 +22,12 @@ class BankAccount{
         cin>>withdrawBalance;
     }
     void display(){
-       ```cpp
-void display(){
-
-    if(balance > withdrawBalance){
-        balance = balance - withdrawBalance;
-    }
-
-    cout << left
-         << setw(15) << "Main Balance"
-         << setw(15) << "Amount Added"
-         << setw(20) << "Amount Withdrawn"
-         << setw(15) << "Final Amount" << endl;
-
-    cout << left
-         << setw(15) << balance
-         << setw(15) << addBalance
-         << setw(20) << withdrawBalance
-         << setw(15) << balance + addBalance << endl;
-
+        cout<<"Main Balance: "<<balance<<endl;
+        cout<<"Amount Added: "<<balance+addBalance<<endl;
+        if(balance>withdrawBalance){
+           balance=balance-withdrawBalance;
+        cout<<"Amount Withdrawn: "<<withdrawBalance<<endl;}
+        cout<<"Final Amount: "<<balance+addBalance<<endl;
     }      
 };
 int main(){
